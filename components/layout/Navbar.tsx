@@ -1,5 +1,6 @@
 "use client";
 
+import { portfolio } from "@/data/portfolio";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -17,7 +18,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#" className="text-xl font-bold tracking-wide">
-          Noel Joe Basil
+          {portfolio.name}
         </a>
 
         <div className="hidden md:flex gap-8">

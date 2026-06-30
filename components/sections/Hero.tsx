@@ -1,5 +1,6 @@
 "use client";
 
+import { portfolio } from "@/data/portfolio";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -22,7 +23,7 @@ export default function Hero() {
           transition={{ delay: .2 }}
           className="text-6xl md:text-8xl font-extrabold"
         >
-          Noel Joe Basil
+          {portfolio.name}
         </motion.h1>
 
         <motion.h2
@@ -31,7 +32,7 @@ export default function Hero() {
           transition={{ delay: .4 }}
           className="mt-6 text-3xl text-cyan-400"
         >
-          Forward Deployed Data Engineer
+          {portfolio.title}
         </motion.h2>
 
         <motion.p
@@ -40,9 +41,7 @@ export default function Hero() {
           transition={{ delay: .6 }}
           className="mt-8 max-w-3xl text-lg leading-8 text-gray-300"
         >
-          I design and build AI-powered data platforms using Palantir Foundry,
-          Python, React, Azure and modern data engineering practices.
-          Currently building production systems for NHS England.
+          {portfolio.subtitle}
         </motion.p>
 
         <motion.div

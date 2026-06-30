@@ -59,10 +59,12 @@ export default function Hero() {
           </a>
 
           <a
-            href="/cv.pdf"
-            className="rounded-lg border border-white/20 px-6 py-3 hover:bg-white/10 transition"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-white/20 px-6 py-3 hover:bg-white/10 transition"
           >
-            Download CV
+              Download CV
           </a>
         </motion.div>
 
